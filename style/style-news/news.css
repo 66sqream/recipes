@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  list-style-type: none;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  color: #000;
+}
+
+body {
+  position: relative;
+  margin: 0 auto;
+  z-index: 2;
+  margin-bottom: 373px;
+}
+
+@media (max-width: 1920px) {
+  html {
+    font-size: 0.8333vw;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}
+.container .hero-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+}
+.container .hero-block .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 114px;
+  padding-bottom: 10px;
+  -webkit-backdrop-filter: blur(300px);
+          backdrop-filter: blur(300px);
+  border-bottom: 1px solid #000;
+  width: 100%;
+}
+.container .hero-block .header .header-con {
+  display: flex;
+  width: 100%;
+  padding: 0px 20px;
+  max-width: 1714px;
+}
+.container .hero-block .header .header-con .header-infa {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 53%;
+}
+.container .hero-block .header .header-con .header-infa .nav-bar {
+  display: flex;
+  gap: 34px;
+  flex: 1;
+}
+.container .hero-block .header .header-con .header-infa .nav-bar li a {
+  font-size: 20px;
+  font-weight: 300;
+}
+.container .hero-block .header .header-con .header-infa .nav-bar li a:hover {
+  border-bottom: 1px solid #000;
+}
+.container .hero-block .header .header-con .header-infa .burger-menu {
+  display: none;
+}
+@media (max-width: 900px) {
+  .container .hero-block .header {
+    display: none;
+  }
+}
+.container .hero-block .header-mobile {
+  display: none;
+  width: 100%;
+}
+.container .hero-block .header-mobile .header-mobile-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+.container .hero-block .header-mobile .header-mobile-con .logo {
+  padding-right: 20px;
+}
+.container .hero-block .header-mobile .header-mobile-con .b-a, .container .hero-block .header-mobile .header-mobile-con .bar:after, .container .hero-block .header-mobile .header-mobile-con .bar:before, .container .hero-block .header-mobile .header-mobile-con .bar {
+  transition: all 0.25s;
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 6px;
+  width: 30px;
+  border-radius: 15px;
+  background-color: #000;
+}
+.container .hero-block .header-mobile .header-mobile-con .menu-collapsed {
+  transition: all 0.25s;
+  position: fixed;
+  top: 10px;
+  left: 9px;
+  height: 36px;
+  width: 36px;
+  z-index: 1;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+.container .hero-block .header-mobile .header-mobile-con .menu-collapsed ul {
+  transition: all 0s;
+  position: fixed;
+  left: -9000px;
+}
+.container .hero-block .header-mobile .header-mobile-con .bar {
+  position: fixed;
+  left: 12px;
+  top: 24px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.container .hero-block .header-mobile .header-mobile-con .bar:before {
+  top: -8px;
+}
+.container .hero-block .header-mobile .header-mobile-con .bar:after {
+  top: 8px;
+}
+.container .hero-block .header-mobile .header-mobile-con .b-a-expanded, .container .hero-block .header-mobile .header-mobile-con .menu-expanded .bar:after, .container .hero-block .header-mobile .header-mobile-con .menu-expanded .bar:before {
+  transition: all 0.25s;
+  top: 0px;
+}
+.container .hero-block .header-mobile .header-mobile-con .menu-expanded {
+  transition: all 0.25s;
+  text-align: center;
+  line-height: 200px;
+  height: 100%;
+  width: 100%;
+  border-radius: 0px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.container .hero-block .header-mobile .header-mobile-con .menu-expanded ul {
+  transition: all 0s;
+  position: relative;
+  left: 0;
+  z-index: 2;
+}
+.container .hero-block .header-mobile .header-mobile-con .menu-expanded a {
+  transition: all 0.15s;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 2px;
+  color: #fff;
+  display: block;
+}
+.container .hero-block .header-mobile .header-mobile-con .menu-expanded a:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.15s;
+  letter-spacing: 2px;
+  color: #333;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.container .hero-block .header-mobile .header-mobile-con .menu-expanded .bar {
+  background-color: transparent;
+  transition: all 0.25s;
+}
+.container .hero-block .header-mobile .header-mobile-con .menu-expanded .bar:before {
+  transform: rotate(45deg);
+}
+.container .hero-block .header-mobile .header-mobile-con .menu-expanded .bar:after {
+  transform: rotate(-45deg);
+}
+.container .hero-block .header-mobile .header-mobile-con nav {
+  padding-top: 70px;
+}
+.container .hero-block .header-mobile .header-mobile-con .row {
+  padding-top: 150px;
+}
+.container .hero-block .header-mobile .header-mobile-con h1 {
+  font-size: 3em;
+}
+.container .hero-block .header-mobile .header-mobile-con h3 {
+  color: #999;
+}
+.container .hero-block .header-mobile .header-mobile-con p {
+  line-height: 160%;
+  letter-spacing: 1px;
+}
+@media (max-width: 900px) {
+  .container .hero-block .header-mobile {
+    display: flex;
+  }
+}
+.container .hero-block .hero-block-con {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 52px 20px 132px 20px;
+  gap: 52px;
+  max-width: 1714px;
+  width: 100%;
+  background: #fff;
+}
+.container .hero-block .hero-block-con .posts {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+.container .hero-block .hero-block-con .posts .post-recipe {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 20px;
+  gap: 46px;
+}
+.container .hero-block .hero-block-con .posts .post-recipe img {
+  border-radius: 20px 0px 0px 20px;
+}
+.container .hero-block .hero-block-con .posts .post-recipe .infa-post-recipe {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 43px 80px 43px 0px;
+}
+.container .hero-block .hero-block-con .posts .post-recipe .infa-post-recipe .profile-date-post {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container .hero-block .hero-block-con .posts .post-recipe .infa-post-recipe .profile-date-post .profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.container .hero-block .hero-block-con .posts .post-recipe .infa-post-recipe .profile-date-post .profile .data-profile .name {
+  font-size: 12px;
+}
+.container .hero-block .hero-block-con .posts .post-recipe .infa-post-recipe .profile-date-post .profile .data-profile .data {
+  font-size: 10px;
+  color: #B9B9B9;
+}
+.container .hero-block .hero-block-con .posts .post-recipe .infa-post-recipe .name-description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 685px;
+  width: 100%;
+}
+.container .hero-block .hero-block-con .posts .post-recipe .infa-post-recipe .name-description h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.container .hero-block .hero-block-con .posts .post-recipe .infa-post-recipe .chips-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+}
+.container .hero-block .hero-block-con .posts .post-recipe .infa-post-recipe .chips-blocks .chips {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px 11px;
+  border: 1px solid #000;
+}
+.container .hero-block .hero-block-con .subscriptions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 365px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 22px 32px;
+  border-radius: 20px;
+  gap: 42px;
+}
+.container .hero-block .hero-block-con .subscriptions h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.container .hero-block .hero-block-con .subscriptions .subscriptions-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+.container .hero-block .hero-block-con .subscriptions .subscriptions-profile .profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .container .hero-block header {
+    justify-content: center;
+    width: 100%;
+  }
+  .container .hero-block header .header-con .header-infa {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+  .container .hero-block header .header-con .header-infa .nav-bar {
+    display: none;
+  }
+  .container .hero-block header .header-con .header-infa .burger-menu {
+    display: flex;
+  }
+  .container .hero-block .hero-block-con {
+    flex-direction: column-reverse;
+  }
+  .container .hero-block .hero-block-con .posts .post-recipe {
+    gap: 0px;
+    flex-direction: column;
+  }
+  .container .hero-block .hero-block-con .posts .post-recipe .dish-img {
+    border-radius: 20px 20px 0px 0px;
+  }
+  .container .hero-block .hero-block-con .posts .post-recipe .infa-post-recipe {
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+  }
+  .container .hero-block .hero-block-con .subscriptions {
+    max-width: 1714px;
+    width: 100%;
+  }
+  .container .hero-block .hero-block-con .subscriptions .subscriptions-profile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 373px;
+  background: url(/img/bg-burger-footer.png) no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: 1;
+  margin: 0 auto;
+  bottom: 0;
+}
+footer .footer-con {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  flex-direction: column;
+  padding: 0px 20px 38px 20px;
+  gap: 10px;
+  max-width: 1714px;
+  width: 100%;
+}
+footer .footer-con .logo-inst {
+  display: flex;
+  align-items: flex-end;
+  gap: 29px;
+}
+footer .footer-con .text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .footer-con .text p {
+  color: #fff;
+}/*# sourceMappingURL=news.css.map */

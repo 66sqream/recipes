@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рецепт</title>
+    <link rel="stylesheet" href="./style/style-recipe-look/style-recipe-look.css">
+</head>
+<body>
+    <section class="container">
+        <section class="hero-block">
+            <header class="header">
+                <section class="header-con">
+                    <div class="header-infa">
+                        <ul class="nav-bar">
+                            <li><a href="./index.html">ГЛАВНАЯ</a></li>
+                            <li><a href="./news.html">НОВОСТИ</a></li>
+                            <li><a href="./recipe.html">РЕЦПТЫ</a></li>
+                            <li><a href="./profile.html">ПРОФИЛЬ</a></li>
+                        </ul>
+                        <img class="logo" src="./img/black-logo.svg" alt="">
+                    </div>
+                </section>
+            </header>
+            <header class="header-mobile">
+                <div class="header-mobile-con">
+                    <img class="logo" src="./img/black-logo.svg"  alt="">
+                    <div class="menu-collapsed">
+                        <div class="bar"></div>
+                        <nav>
+                           <ul>
+                            <li><a href="./index.html">ГЛАВНАЯ</a></li>
+                            <li><a href="./news.html">НОВОСТИ</a></li>
+                            <li><a href="./recipe.html">РЕЦПТЫ</a></li>
+                            <li><a href="./profile.html">ПРОФИЛЬ</a></li>
+                           </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <section class="hero-block-con">
+                <h1 class="title-recipe">Тольяттинский бутерброд профессианала</h1>
+
+                    <div class="recipe-profile">
+                        <div class="recipe-infa">
+                            <div class="time-add-favorite">
+                                <div class="time-cook">
+                                    <img src="/img/icon/cook-time-black.svg" alt="">
+                                    <p>15 МИНУТ</p>
+                                </div>
+                                <div class="add-favorite">
+                                    <img src="/img/icon/bookmark-icon.svg" alt="">
+                                    <p>ДОБАВИТЬ В ИЗБРАННОЕ</p>
+                                </div>
+                            </div>
+                            <img class="dish-img" src="/img/buter.png" alt="">
+                        </div>
+                        <div class="profile-subscribe">
+                            <div class="avtor">
+                                <img class="ava-profile" src="/img/ava-profile.png" alt="">
+                                <div class="profile-name">
+                                    <div class="avtor-name">
+                                        <h1 class="avtor-h1">АВТОР: </h1>
+                                        <h1 class="avtor-h1">DANIIL GERASKIN</h1>
+                                    </div>
+                                    <p class="go-to-profile">ПЕРЕЙТИ В ПРОФИЛЬ</p>
+                                </div>
+                            </div>
+                            <button class="sub-btn">ПОДПИСАТЬСЯ</button>
+                        </div>
+                    </div>
+                    <div class="energy-value">
+                        <h1 class="title-energy-value">ЭНЕРГЕТИЧЕСКАЯ ЦЕННОСТЬ НА ПОРЦИЮ</h1>
+                        <div class="value-blocks">
+                            <div class="value-block">
+                                <h1 class="title-value-block">КАЛОРИЙНОСТЬ</h1>
+                                <div class="infa-value-block">
+                                    <p class="num-value">249,6 </p>
+                                    <p class="unit">ККАЛ</p>
+                                </div>
+                            </div>
+                            <div class="value-block">
+                                <h1 class="title-value-block">БЕЛКИ</h1>
+                                <div class="infa-value-block">
+                                    <p class="num-value">21,3</p>
+                                    <p class="unit">ГРАММ</p>
+                                </div>
+                            </div>
+                            <div class="value-block">
+                                <h1 class="title-value-block">ЖИРЫ</h1>
+                                <div class="infa-value-block">
+                                    <p class="num-value">6,2</p>
+                                    <p class="unit">ГРАММ</p>
+                                </div>
+                            </div>
+                            <div class="value-block">
+                                <h1 class="title-value-block">УГЛЕВОДЫ</h1>
+                                <div class="infa-value-block">
+                                    <p class="num-value">27,1</p>
+                                    <p class="unit">ГРАММ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ingredient-block"> 
+                        <div class="ingredient-title-quantity">
+                            <h1 class="ingredient-title">ИНГРЕДИЕНТЫ</h1>
+                            <div class="quantity-block">
+                                <p>ПОРЦИИ</p>
+                                <div class="btn-quantity">
+                                    <button class="minus-plus-btn" id="decrement">-</button>
+                                    <div class="quantity" id="portion">1</div>
+                                    <button class="minus-plus-btn" id="increment">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ingredients">
+                            <div class="ingredient" data-quantity="2">
+                                <h1 class="name-ingredient">Тостовый хлеб</h1>
+                                <div class="line"></div>
+                                <div class="quantity-ingredient">
+                                    <p class="quantity-num">2</p>
+                                    <p class="quantity-unit">лом</p>
+                                </div>
+                            </div>
+                            <div class="ingredient" data-quantity="1">
+                                <h1 class="name-ingredient">Помидор</h1>
+                                <div class="line"></div>
+                                <div class="quantity-ingredient">
+                                    <p class="quantity-num">1</p>
+                                    <p class="quantity-unit">шт</p>
+                                </div>
+                            </div>
+                            <div class="ingredient" data-quantity="50">
+                                <h1 class="name-ingredient">Сыр</h1>
+                                <div class="line"></div>
+                                <div class="quantity-ingredient">
+                                    <p class="quantity-num">50</p>
+                                    <p class="quantity-unit">г</p>
+                                </div>
+                            </div>
+                            <div class="ingredient" data-quantity="1">
+                                <h1 class="name-ingredient">Соль</h1>
+                                <div class="line"></div>
+                                <div class="quantity-ingredient">
+                                    <p class="quantity-num">1</p>
+                                    <p class="quantity-unit">г</p>
+                                </div>
+                            </div>
+                            <div class="ingredient" data-quantity="1">
+                                <h1 class="name-ingredient">Огурец</h1>
+                                <div class="line"></div>
+                                <div class="quantity-ingredient">
+                                    <p class="quantity-num">1</p>
+                                    <p class="quantity-unit">шт</p>
+                                </div>
+                            </div>
+                            <div class="ingredient" data-quantity="0">
+                                <h1 class="name-ingredient">Салатные листья</h1>
+                                <div class="line"></div>
+                                <div class="quantity-ingredient">
+                                    <p class="quantity-unit">По вкусу</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cooking-instructions"> 
+                        <h1 class="title-cooking-instructions">ИНСТРУКЦИЯ ПРИГОТОВЛЕНИЯ</h1>
+                        <div class="instructions">
+                            <div class="instruction-block">
+                                <img class="img-instruction" src="./img/instruction-img.png" alt="">
+                                <div class="text-instruction">
+                                    <h1 class="title-instruction">1 Подготовьте ингредиенты:</h1>
+                                    <p class="point-instruction">Вымойте помидор и нарежьте его на тонкие круглые ломтики.
+                                        Подготовьте два куска хлеба.</p>
+                                </div>
+                            </div>
+                            <div class="instruction-block">
+                                <img class="img-instruction" src="./img/instruction-img.png" alt="">
+                                <div class="text-instruction">
+                                    <h1 class="title-instruction">2 Обжарьте хлеб (этот шаг можно пропустить, если вы предпочитаете свежий хлеб):</h1>
+                                    <p class="point-instruction">Разогрейте сковороду на среднем огне.
+                                        Добавьте немного масла на сковороду (опционально).
+                                        Обжарьте каждый кусок хлеба с обеих сторон до золотистого цвета.</p>
+                                </div>
+                            </div>
+                            <div class="instruction-block">
+                                <img class="img-instruction" src="./img/instruction-img.png" alt="">
+                                <div class="text-instruction">
+                                    <h1 class="title-instruction">3 Сложите бутерброд:</h1>
+                                    <p class="point-instruction">Положите ломтики помидора на один кусок хлеба.
+                                        Посолите и поперчите помидоры по вкусу.
+                                        Накройте вторым куском хлеба.</p>
+                                </div>
+                            </div>
+                            <div class="instruction-block">
+                                <img class="img-instruction" src="./img/instruction-img.png" alt="">
+                                <div class="text-instruction">
+                                    <h1 class="title-instruction">4 Нарежьте бутерброд:</h1>
+                                    <p class="point-instruction">По желанию, нарежьте бутерброд на половинки или четвертинки для удобства.</p>
+                                </div>
+                            </div>
+                            <div class="instruction-block">
+                                <img class="img-instruction" src="./img/instruction-img.png" alt="">
+                                <div class="text-instruction">
+                                    <h1 class="title-instruction">5 Подавайте и наслаждайтесь:</h1>
+                                    <p class="point-instruction">Подайте бутерброд с помидором сразу после приготовления.
+                                        Можно добавить к бутерброду дополнительные ингредиенты по вашему вкусу, такие как листья салата или кусочки сыра.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="similar-recipes">
+                        <h1 class="similar-recipes-titles">ПОХОЖИЕ РЕЦЕПТЫ</h1>
+                        <div class="recipes-btn">
+                            <div class="recipes">
+                                <a href="./recipe-look.html">
+                                    <div class="recipe">
+                                        <img class="bg-buter" src="./img/buter.png" alt="">
+                                        <div class="infa-block-dish">
+                                            <h1>Бутерброд с помидором</h1>
+                                            <div class="time-cook">
+                                                <img class="cook-time" src="./img/icon/cook-time.svg" alt="">
+                                                <img class="cook-time-black" src="./img/icon/cook-time-black.svg" alt="">
+                                                <p>30 Минут</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="./recipe-look.html">
+                                    <div class="recipe">
+                                        <img class="bg-buter" src="./img/buter.png" alt="">
+                                        <div class="infa-block-dish">
+                                            <h1>Бутерброд с помидором</h1>
+                                            <div class="time-cook">
+                                                <img class="cook-time" src="./img/icon/cook-time.svg" alt="">
+                                                <img class="cook-time-black" src="./img/icon/cook-time-black.svg" alt="">
+                                                <p>30 Минут</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="./recipe-look.html">
+                                    <div class="recipe">
+                                        <img class="bg-buter" src="./img/buter.png" alt="">
+                                        <div class="infa-block-dish">
+                                            <h1>Бутерброд с помидором</h1>
+                                            <div class="time-cook">
+                                                <img class="cook-time" src="./img/icon/cook-time.svg" alt="">
+                                                <img class="cook-time-black" src="./img/icon/cook-time-black.svg" alt="">
+                                                <p>30 Минут</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="recipes-hidden">
+                                    <a href="./recipe-look.html">
+                                        <div class="recipe">
+                                            <img class="bg-buter" src="./img/buter.png" alt="">
+                                            <div class="infa-block-dish">
+                                                <h1>Бутерброд с помидором</h1>
+                                                <div class="time-cook">
+                                                    <img class="cook-time" src="./img/icon/cook-time.svg" alt="">
+                                                    <img class="cook-time-black" src="./img/icon/cook-time-black.svg" alt="">
+                                                    <p>30 Минут</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="./recipe-look.html">
+                                        <div class="recipe">
+                                            <img class="bg-buter" src="./img/buter.png" alt="">
+                                            <div class="infa-block-dish">
+                                                <h1>Бутерброд с помидором</h1>
+                                                <div class="time-cook">
+                                                    <img class="cook-time" src="./img/icon/cook-time.svg" alt="">
+                                                    <img class="cook-time-black" src="./img/icon/cook-time-black.svg" alt="">
+                                                    <p>30 Минут</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="./recipe-look.html">
+                                        <div class="recipe">
+                                            <img class="bg-buter" src="./img/buter.png" alt="">
+                                            <div class="infa-block-dish">
+                                                <h1>Бутерброд с помидором</h1>
+                                                <div class="time-cook">
+                                                    <img class="cook-time" src="./img/icon/cook-time.svg" alt="">
+                                                    <img class="cook-time-black" src="./img/icon/cook-time-black.svg" alt="">
+                                                    <p>30 Минут</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <button class="show-hidden-btn">Показать еще</button>
+                        </div>
+                    </div>
+            </section>
+        </section>
+    </section>
+    <footer>
+        <section class="footer-con">
+            <div class="logo-inst">
+                <img class="logo" src="./img/logo.svg" alt="">
+                <img class="inst" src="./img/inst.svg" alt="">
+            </div>
+            <div class="text">
+                <p>E-mail: ahahah@gmail.com</p>
+                <p>© 2024, recipe.com Публичная оферта</p>
+            </div>
+        </section>
+    </footer>
+    <script src="./script/plus-minus-btn-ingredient.js"></script>
+    <script src="./script/btn-show-hidden.js"></script>
+    <script src="script/burger-menu.js"></script>
+</body>
+</html>
